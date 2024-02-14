@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Rubik:ital@1&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #1f1f1e;
+    margin: 50px;
+    text-align: center;
+    font-family: Inter;
+    color: white;
+}
+
+    @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  /* Initial state of the element */
+  .lineUp {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(80%);
+    animation: 2s anim-lineUp ease-out; /* Animation properties */
+  }
+
+.container {
+    overflow: hidden;
+    background-color: #2f2f2e;
+    border-radius: 20px;
+    padding: 5px 20px;
+    box-shadow: 0 12px 16px 0 #00000015,0 17px 20px 0 #00000015;
+}
+
+.box {
+    overflow: hidden;
+    background-color: #2f2f2e;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-family: Roboto;
+    margin: 50px;
+    box-shadow: 0 12px 16px 0 #00000015,0 17px 20px 0 #00000015;
+}
+ 
+ /* CSS animation */
+  @keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  /* Initial state of the element */
+  .lineUp {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(80%);
+    animation: 2s anim-lineUp ease-out; /* Animation properties */
+  }
+
+  /* Style the navbar links */
+  .link {
+    float: right; /* Float the links to the left */
+    display: block; /* Display links as blocks */
+    color: white; /* Text color */
+    text-align: center; /* Center-align text */
+    padding: 14px 20px; /* Padding around the links */
+    text-decoration: none; /* Remove default underline */
+    margin: 20px;
+    transition: transform 0.5s; /* Add smooth transition */
+  }
+  
+  /* Change color on hover */
+  .link:hover {
+    background-color: rgba(0, 0, 0, 0.067); /* Background color on hover */
+    transform: scale(1.2); /* Enlarge text on hover */
+    border-radius: 20px;
+    box-shadow: 0 12px 16px 0 #cccccc1e,0 17px 20px 0 #afafaf14;
+  }
+
+  .link.active {
+    border-radius: 20px;
+  }
+  
+  /* Active/current link */
+  .logo {
+    transition: transform 0.5s; /* Add smooth transition */
+    float: left;
+    overflow: hidden;
+    margin-left: 20px;
+  }
+
+  h1 {
+    letter-spacing: 10px;
+  }
+  
+
+    /* Change color on hover */
+  .logo:hover {
+    transform: scale(1.1); /* Enlarge text on hover */
+  }
+
+  i {
+    margin-right: 10px;
+  }
+
+  /* test */
+  .buttons-container {
+    display: flex; /* Align buttons horizontally */
+    justify-content: center; /* Optional: Adjust as needed */
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line if needed */
+  }
+  
+  /* Individual game button styles remain the same */
+  .game-button {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    margin-right: 50px;
+    margin-top: 50px;
+  }
+  
+  .game-button img {
+    display: block;
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.356);
+    transition: filter 0.3s;
+  }
+  
+  .game-button span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .game-button:hover img {
+    filter: brightness(70%);
+  }
+  
+  .game-button:hover span {
+    opacity: 1;
+  }
+  
