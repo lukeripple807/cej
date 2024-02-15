@@ -137,7 +137,6 @@ body {
     position: relative;
     margin: 10px;
     margin-right: 50px;
-    margin-top: 50px;
   }
   
   .game-button img {
@@ -170,3 +169,45 @@ body {
     opacity: 1;
   }
   
+/* advanced css (for geniuses only) */
+
+.lukespicks {
+  background-color: #2f2f2e;
+  border-radius: 20px 20px 10px 10px;
+  padding: 10px;
+  margin-top: 50px;
+  width: 80%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+/* maybe scroll code? */
+
+::-webkit-scrollbar{
+  height: 10px;
+  width: 4px;
+  background: #212121;
+  border-radius: 0px 0px 20px 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #313131; 
+border-radius: 0px 0px 20px 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: rgba(19, 18, 18, 0)f2e; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: rgba(35, 34, 34, 0)f2e; 
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+  background: #252525;
+  border-radius: 20px;
+}
