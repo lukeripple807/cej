@@ -9,6 +9,18 @@ body {
     color: white;
 }
 
+.banner {
+  margin: 20px;
+  padding: 10px;
+  background-color: #313130;
+  border-radius: 20px;
+}
+
+.banner-heading {
+  letter-spacing: 20px;
+  font-size: 200%;
+}
+
     @keyframes anim-lineUp {
     0% {
       opacity: 0;
@@ -211,3 +223,50 @@ background: rgba(35, 34, 34, 0)f2e;
   background: #252525;
   border-radius: 20px;
 }
+
+/* bounce */
+#text {
+  text-shadow: 3px 6px 3px rgba(0,0,0,.1);
+  font-size: 40px;
+  color: white;
+}
+
+#text i {
+  position: relative;
+  top: 10px;
+  font-style: normal;
+  animation: bounce 1s ease infinite alternate;
+}
+
+#text i:nth-child(1) {
+  -moz-animation-delay: .2s;
+  -webkit-animation-delay: .2s;
+  animation-delay: .2s;
+}
+#text i:nth-child(2) {
+  -moz-animation-delay: .4s;
+  -webkit-animation-delay: .4s;
+  animation-delay: .4s;
+}
+#text i:nth-child(3) {
+  -moz-animation-delay: .6s;
+  -webkit-animation-delay: .6s;
+  animation-delay: .6s;
+}
+#text i:nth-child(4) {
+  -moz-animation-delay: .8s;
+  -webkit-animation-delay: .8s;
+  animation-delay: .8s;
+}
+#text i:nth-child(5) {
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+#text i:nth-child(6) {
+  -moz-animation-delay: 1.2s;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+@keyframes bounce { 100% { top: -20px; } }
