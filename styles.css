@@ -139,6 +139,7 @@ body {
   /* test */
   .buttons-container {
     display: flex; /* Align buttons horizontally */
+    margin-top: 20px;
     justify-content: center; /* Optional: Adjust as needed */
     flex-wrap: wrap; /* Allow buttons to wrap to the next line if needed */
   }
@@ -277,6 +278,7 @@ background: rgba(35, 34, 34, 0)f2e;
   display: flex; /* Align buttons horizontally */
   justify-content: center; /* Optional: Adjust as needed */
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .idontlikeclasses {
