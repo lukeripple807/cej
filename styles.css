@@ -270,3 +270,104 @@ background: rgba(35, 34, 34, 0)f2e;
 }
 
 @keyframes bounce { 100% { top: -20px; } }
+
+/* idk honestly */
+
+.contuner {
+  display: flex; /* Align buttons horizontally */
+  justify-content: center; /* Optional: Adjust as needed */
+  flex-wrap: wrap;
+}
+
+.idontlikeclasses {
+  width: 300px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  border-radius: 20px; /* Adjust the border radius for rounded edges */
+  overflow: hidden;
+  position: relative;
+  margin: 20px;
+}
+
+.ermage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+  opacity: 0; /* Initially hide the overlay */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity with ease in and out */
+}
+
+.texticus {
+  position: absolute;
+  bottom: 20px; /* Adjust as needed */
+  left: 30px; /* Adjust as needed */
+  color: white; /* Adjust text color as needed */
+  font-size: 16px; /* Adjust text size as needed */
+  z-index: 1;
+}
+
+.idontlikeclasses:hover .overlay {
+  opacity: 1; /* Show the overlay on hover */
+}
+
+.idontlikeclasses:hover .overlay .ermage {
+  opacity: 0; /* Hide the static image on hover */
+}
+
+.highlight {
+  display: inline-block;
+  padding: .25em 0;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.money {
+  display: inline-block;
+  padding: .25em 0;
+  background: #124203;
+  color: #ffffff;
+  border-radius: 20px;
+  padding-left: 10px;
+  margin-left: 180px;
+  padding-right: 10px;
+}
+
+.button {
+  background-color: #313130; /* Green */
+  border: none;
+  color: white;
+  font-family: Inter;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  color: white; /* Text color */
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  transition: transform 0.5s; /* Add smooth transition */
+}
+
+
+  /* Change color on hover */
+  .button:hover {
+    transform: scale(1.3); /* Enlarge text on hover */
+    border-radius: 20px;
+    box-shadow: 0 12px 16px 0 #0000000c,0 17px 20px 0 #00000009;
+  }
+
+  .button.active {
+    border-radius: 25px;
+  }
