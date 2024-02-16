@@ -104,7 +104,6 @@ body {
   
   /* Change color on hover */
   .link:hover {
-    background-color: rgba(0, 0, 0, 0.067); /* Background color on hover */
     transform: scale(1.2); /* Enlarge text on hover */
     border-radius: 20px;
     box-shadow: 0 12px 16px 0 #cccccc1e,0 17px 20px 0 #afafaf14;
