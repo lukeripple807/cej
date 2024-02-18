@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #1f1f1e;
+    margin: 80px;
+    text-align: center;
+    font-family: Inter;
+    color: white;
+}
+
+.iframer {
+    height: 400px;
+    width: 800px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.356); /* Adding a shadow */
+    overflow: hidden;
+    float: left;
+    border-radius: 10px;
+}
+
+.dws {
+    float: right; 
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.356); /* Adding a shadow */
+    background-color: #313130;
+    padding: 20px;
+    width: 30%;
+    height: auto;
+}
+
+.dws1 {
+    float: right; 
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.356); /* Adding a shadow */
+    background-color: #313130;
+    margin-top: 30px;
+    width: 20%;
+    margin-right: 80px;
+    height: 20%;
+    overflow: hidden;
+}
+
+
+.fs {
+    width: 50px;
+    cursor: pointer;
+    height: 50px;
+  }
+  
+  .fuls {
+    all: unset;
+  }
+
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  /* Initial state of the element */
+  .lineUp {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(80%);
+    animation: 2s anim-lineUp ease-out; /* Animation properties */
+  }
+
+.inlarge {
+    transition: transform 0.5s; /* Add smooth transition */
+}
+
+.inlarge:hover {
+    transform: scale(1.2); /* Enlarge text on hover */
+}
+
+.idontlikeclasses {
+  width: 300px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  border-radius: 20px; /* Adjust the border radius for rounded edges */
+  overflow: hidden;
+  position: relative;
+  margin: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.356);
+}
+
+.ermage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.objection {
+  float: left;
+  width: 10%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.788) 0%, rgba(0, 0, 0, 0.418) 100%);
+  opacity: 0; /* Initially hide the overlay */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity with ease in and out */
+}
+
+.rightshitfightshit {
+  background-color: #2f2f2e;
+  border-radius: 20px;
+  padding: 5px 20px;
+  float: right;
+  margin-top: 55px;
+  width: 60%;
+  box-shadow: 0 12px 16px 0 #00000015,0 17px 20px 0 #00000015;
+}
+
+.button {
+  background-color: #424242; /* Green */
+  border: none;
+  color: white;
+  font-family: Inter;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  color: white; /* Text color */
+  border-radius: 20px;
+  transition: transform 0.5s; /* Add smooth transition */
+  margin-bottom: 20px;
+}
+
+
+  /* Change color on hover */
+  .button:hover {
+    transform: scale(1.1); /* Enlarge text on hover */
+    border-radius: 20px;
+    box-shadow: 0 12px 16px 0 #0000000c,0 17px 20px 0 #00000009;
+  }
+
+  .button.active {
+    border-radius: 25px;
+  }

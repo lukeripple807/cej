@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="Download.css">
+<script src="animations.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centuri</title>
+<script src="https://kit.fontawesome.com/a4a2140949.js" crossorigin="anonymous"></script>
+<link rel="icon" type="image/png" href="Favicons/centuri.png" id="favicon">
+</head>
+
+<div class="objection">
+    <div class="idontlikeclasses inlarge">
+        <img class="ermage" src="Gifs/gun.gif" alt="Your GIF">\
+    </div>
+</div>
+
+<div class="rightshitfightshit">
+    <h1>Altdev</h1>
+    <p>For students of fcps, the county has rolled out an application to spy on students.
+        The county is trying to find things to get kids in trouble. That is why I have made an application that
+        repeativly shuts downs the schools retarded bloatware.
+    </p>
+    <button class="button inlarge" onclick="download()">Download</button>
+
+</div>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+<script>
+    function download() {
+        axios({
+            url: 'https://raw.githubusercontent.com/lukeripple807/dontlookorelse/main/altdev.bat',
+            method: 'GET',
+            responseType: 'blob'
+        })
+            .then((response) => {
+                const url = window.URL
+                    .createObjectURL(new Blob([response.data]));
+                const link = document.createElement('a');
+                link.href = url;
+                link.setAttribute('download', 'altdev.bat');
+                document.body.appendChild(link);
+                link.click();
+            })
+    }
+ 
+</script>

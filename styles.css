@@ -301,7 +301,7 @@ background: rgba(35, 34, 34, 0)f2e;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.788) 0%, rgba(0, 0, 0, 0.418) 100%);
   opacity: 0; /* Initially hide the overlay */
   transition: opacity 0.3s ease-in-out; /* Smooth transition for opacity with ease in and out */
 }
