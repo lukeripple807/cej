@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="page.css">
+<script src="animations.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centuri</title>
+<script src="https://kit.fontawesome.com/a4a2140949.js" crossorigin="anonymous"></script>
+<link rel="icon" type="image/png" href="Favicons/centuri.png" id="favicon">
+</head>
+
+<body>
+
+
+
+<div class="lineUp">
+<iframe id="embededGame" class="iframer" src="../games/bitlife/index.html" width="1000" height="1000"  frameborder="0"></iframe>
+
+<div class="dws">
+    <h1 class="inlarge">Bitlife</h1>
+    <p class="inlarge">Idk what to write. Its a life sim i guess?</p>
+    <button class="fuls" onclick="goFullscreen('embededGame'); return false"><img class="fs" src="../images/cullscreen.png"></button>
+  </div>
+
+
+</div>
+</body>
+<script>
+    function goFullscreen(id) {
+    var element = document.getElementById(id);
+    if (element.mozRequestFullScreen) {
+      element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullScreen) {
+      element.webkitRequestFullScreen();
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    var element = document.querySelector('.lineUp');
+    element.style.opacity = '1'; // Set opacity to 1 to reveal the element
+    element.style.transform = 'translateY(0%)'; // Reset transform to initial position
+  });
+</script>

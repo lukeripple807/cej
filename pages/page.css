@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: #1f1f1e;
+    margin: 80px;
+    text-align: center;
+    font-family: Inter;
+    color: white;
+}
+
+.iframer {
+    height: 400px;
+    width: 800px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.356); /* Adding a shadow */
+    overflow: hidden;
+    float: left;
+    border-radius: 10px;
+}
+
+.dws {
+    float: right; 
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.356); /* Adding a shadow */
+    background-color: #313130;
+    padding: 20px;
+    width: 30%;
+    height: auto;
+}
+
+.dws1 {
+    float: right; 
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.356); /* Adding a shadow */
+    background-color: #313130;
+    margin-top: 30px;
+    width: 20%;
+    margin-right: 80px;
+    height: 20%;
+    overflow: hidden;
+}
+
+
+.fs {
+    width: 50px;
+    cursor: pointer;
+    height: 50px;
+  }
+  
+  .fuls {
+    all: unset;
+  }
+
+@keyframes anim-lineUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80%);
+    }
+    20% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  /* Initial state of the element */
+  .lineUp {
+    opacity: 0; /* Initially hidden */
+    transform: translateY(80%);
+    animation: 2s anim-lineUp ease-out; /* Animation properties */
+  }
+
+.inlarge {
+    transition: transform 0.5s; /* Add smooth transition */
+}
+
+.inlarge:hover {
+    transform: scale(1.2); /* Enlarge text on hover */
+}
+
