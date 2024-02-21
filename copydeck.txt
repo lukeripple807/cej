@@ -1,0 +1,15 @@
+<div class="discr">
+  <img class="retsu" src="images/Fortnite_F_lettermark_logo.png">
+  <div class="texterson">
+    <p class="sizem">Fortnite</p>
+    <p>Fortnite is a battle royale<br> game with 100 players.</p>
+  </div>
+</div>
+
+<div class="discr">
+  <img class="retsu" src="images/Fortnite_F_lettermark_logo.png">
+  <div class="texterson">
+    <p class="sizem">Fortnite</p>
+    <p>Fortnite is a battle royale<br> game with 100 players.</p>
+  </div>
+</div>
