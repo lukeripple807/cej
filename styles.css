@@ -405,3 +405,65 @@ background: rgba(35, 34, 34, 0)f2e;
     width: 50%;
     margin-right: 20px;
   }
+
+  /* more yapping styles */
+
+
+
+
+
+    /* test */
+    .nigg {
+      display: flex; /* Align buttons horizontally */
+      margin-top: 20px;
+      justify-content: center; /* Optional: Adjust as needed */
+      flex-wrap: wrap; /* Allow buttons to wrap to the next line if needed */
+    }
+    
+    /* Individual game button styles remain the same */
+    .gamercum {
+      display: inline-block;
+      position: relative;
+      margin: 10px;
+      margin-right: 50px;
+    }
+    
+    .gamercum img {
+      display: block;
+      width: 150px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.356);
+      transition: filter 0.3s;
+    }
+    
+    .gamercum span {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    
+    .gamercum:hover img {
+      filter: brightness(70%);
+    }
+    
+    .gamercum:hover span {
+      opacity: 1;
+    }
+    
+  
+  .lukespick {
+    background-color: #ffffff00;
+    border-radius: 20px 20px 10px 10px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 80%;
+    }
+  
