@@ -66,31 +66,6 @@ body {
   transform: translate(-190%, -640%);
 }
 
-.gamesectiontitle2 {
-  background-color: #2f2f2e;
-  border-radius: 20px 20px 0px 0px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  width: 20%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-190%, -70%);
-}
-
-.gamesectiontitle3 {
-  background-color: #2f2f2e;
-  border-radius: 20px 20px 0px 0px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  width: 20%;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-190%, 500%);
-}
-
-
 .box {
     overflow: hidden;
     background-color: #2f2f2e;
@@ -175,20 +150,6 @@ body {
   .buttons-container {
     display: flex; /* Align buttons horizontally */
     margin-top: 80px;
-    justify-content: center; /* Optional: Adjust as needed */
-    flex-wrap: wrap; /* Allow buttons to wrap to the next line if needed */
-  }
-
-  .buttons-container2 {
-    display: flex; /* Align buttons horizontally */
-    margin-top: 100px;
-    justify-content: center; /* Optional: Adjust as needed */
-    flex-wrap: wrap; /* Allow buttons to wrap to the next line if needed */
-  }
-
-  .buttons-container3 {
-    display: flex; /* Align buttons horizontally */
-    margin-top: 100px;
     justify-content: center; /* Optional: Adjust as needed */
     flex-wrap: wrap; /* Allow buttons to wrap to the next line if needed */
   }
